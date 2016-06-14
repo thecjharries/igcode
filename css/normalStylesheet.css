@@ -253,6 +253,8 @@ button:active,
     top: 24px;
     left: 160px;
     margin-left: 18px;
+    font-weight: normal !important;
+    font-variant: normal !important;
 }
 
 
