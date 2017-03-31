@@ -129,6 +129,10 @@ a:active {
     border-top: 1px solid black;
 }
 
+.side > .spacer:first-of-type {
+    border-top: 0
+}
+
 .side > .spacer > div {
     padding-left: 4px;
     margin-left: 4px;
