@@ -255,6 +255,11 @@ button:active,
     margin-left: 18px;
     font-weight: normal !important;
     font-variant: normal !important;
+    z-index: 9001;
+}
+
+.pagename:hover {
+    background-color: #F1F1F1;
 }
 
 
@@ -3369,6 +3374,37 @@ div.titlebox span.number:after {
 }
 
 
+.linkflair-webgllabel .linkflairlabel {
+    background-color: #389090;
+    color: #fff;
+}
+
+.linkflair-htmllabel .linkflairlabel {
+    background-color: #F47E7D;
+    color: #fff;
+}
+
+.linkflair-flashlabel .linkflairlabel {
+    background-color: #B5D045;
+    color: #000;
+}
+
+.linkflair-webplayerlabel .linkflairlabel {
+    background-color: #FB8335;
+    color: #fff;
+}
+
+.linkflair-downloadablelabel .linkflairlabel {
+    background-color: #81C0C5;
+    color: #000;
+}
+
+.linkflair-crossplatformlabel .linkflairlabel {
+    background-color: #E0C7A8;
+    color: #000;
+}
+
+
 /*Cloned for flairselector as well*/
 
 .flairselector .linkflair-nonelabel .linkflairlabel {
@@ -3441,6 +3477,37 @@ div.titlebox span.number:after {
     color: #fff;
 }
 
+.flairselector .linkflair-webgllabel .linkflairlabel {
+    background-color: #389090;
+    color: #fff;
+}
+
+.flairselector .linkflair-htmllabel .linkflairlabel {
+    background-color: #F47E7D;
+    color: #fff;
+}
+
+.flairselector .linkflair-flashlabel .linkflairlabel {
+    background-color: #B5D045;
+    color: #000;
+}
+
+.flairselector .linkflair-webplayerlabel .linkflairlabel {
+    background-color: #FB8335;
+    color: #fff;
+}
+
+.flairselector .linkflair-downloadablelabel .linkflairlabel {
+    background-color: #81C0C5;
+    color: #000;
+}
+
+.flairselector .linkflair-crossplatformlabel .linkflairlabel {
+    background-color: #E0C7A8;
+    color: #000;
+}
+
+
 html:lang(me) .link:not(.linkflair-metalabel) {
     display: none;
 }
@@ -3495,6 +3562,41 @@ html:lang(lf) .link:not(.linkflair-lflabel) {
 
 html:lang(vid) .link:not(.linkflair-videolabel) {
     display: none;
+}
+
+html:lang(webgl) .link:not(.linkflair-webgllabel) {
+    display: none;
+}
+
+html:lang(html) .link:not(.linkflair-htmllabel) {
+    display: none;
+}
+
+html:lang(flash) .link:not(.linkflair-flashlabel) {
+    display: none;
+}
+
+html:lang(unity) .link:not(.linkflair-webplayerlabel) {
+    display: none;
+}
+
+html:lang(down) .link:not(.linkflair-downloadablelabel) {
+    display: none;
+}
+
+html:lang(cross) .link:not(.linkflair-crossplatformlabel) {
+    display: none;
+}
+
+.side a[href*='#none'] {
+    font-size: 10px;
+    padding: 1px 6px;
+    border: 1px solid #444;
+    font-weight: bold;
+    line-height: 20px;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
 }
 
 .side a[href*='#me'] {
@@ -3641,7 +3743,6 @@ html:lang(vid) .link:not(.linkflair-videolabel) {
 }
 
 .side a[href*='#rf'] {
-    display: block;
     font-size: 10px;
     padding: 1px 6px;
     border: 1px solid #444;
@@ -3650,6 +3751,84 @@ html:lang(vid) .link:not(.linkflair-videolabel) {
     border-radius: 3px;
     background: #DF0101;
     color: #fff;
+    text-align: center;
+    width: 93%;
+}
+
+.side a[href*='#webgl'] {
+    font-size: 10px;
+    padding: 1px 6px;
+    border: 1px solid #444;
+    font-weight: bold;
+    line-height: 12px;
+    border-radius: 3px;
+    background: #389090;
+    color: #fff;
+    text-align: center;
+    width: 93%;
+}
+
+.side a[href*='#html'] {
+    font-size: 10px;
+    padding: 1px 6px;
+    border: 1px solid #444;
+    font-weight: bold;
+    line-height: 12px;
+    border-radius: 3px;
+    background: #F47E7D;
+    color: #fff;
+    text-align: center;
+    width: 93%;
+}
+
+.side a[href*='#flash'] {
+    font-size: 10px;
+    padding: 1px 6px;
+    border: 1px solid #444;
+    font-weight: bold;
+    line-height: 12px;
+    border-radius: 3px;
+    background: #B5D045;
+    color: #000;
+    text-align: center;
+    width: 93%;
+}
+
+.side a[href*='#webplayer'] {
+    font-size: 10px;
+    padding: 1px 6px;
+    border: 1px solid #444;
+    font-weight: bold;
+    line-height: 12px;
+    border-radius: 3px;
+    background: #FB8335;
+    color: #fff;
+    text-align: center;
+    width: 93%;
+}
+
+.side a[href*='#down'] {
+    font-size: 10px;
+    padding: 1px 6px;
+    border: 1px solid #444;
+    font-weight: bold;
+    line-height: 12px;
+    border-radius: 3px;
+    background: #81C0C5;
+    color: #000;
+    text-align: center;
+    width: 93%;
+}
+
+.side a[href*='#cross'] {
+    font-size: 10px;
+    padding: 1px 6px;
+    border: 1px solid #444;
+    font-weight: bold;
+    line-height: 12px;
+    border-radius: 3px;
+    background: #E0C7A8;
+    color: #000;
     text-align: center;
     width: 93%;
 }
@@ -3803,4 +3982,36 @@ html:lang(vid) .link:not(.linkflair-videolabel) {
     border-radius: 5px;
     color: #128221;
     line-height: 70%;
+}
+
+.side a[href="https://discord.gg/pC9RY5B"] {
+    background: url(%%incremental-discord-banner2%%);
+    background-repeat: no-repeat;
+    font-size: 0px!important;
+    height: 40px;
+    width: 270px;
+    z-index: 99;
+    display: block;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.author[href$="AutoModerator"] {
+    visibility: hidden;
+    position: relative;
+}
+.author[href$="AutoModerator"]::after {
+    color: inherit !important;
+    background-color:inherit!important;
+    content: "AutoClicker" !important;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    text-align: center!important;
+}
+
+.res .author[href$="AutoModerator"]::after {
+    padding: 2px 0!important;
 }
