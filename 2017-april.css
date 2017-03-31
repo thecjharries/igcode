@@ -1,0 +1,193 @@
+:not(#mail) {
+    background: transparent;
+}
+
+.morelink,
+linkinfo {
+    border: 0;
+}
+
+body {
+    position: relative;
+    color: #333 !important;
+    background: #000 url(%%blackNoise%%) !important;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Arial, sans-serif !important;
+    font-size: 15px;
+}
+
+.side,
+div[role="main"] {
+    position: relative;
+    background: #FFF url(%%whiteNoise%%) !important;
+}
+
+.side {
+    float: left !important;
+    margin-left: 32px;
+    margin-right: 0;
+    padding: 0;
+}
+
+div[role="main"] {
+    float: left !important;
+    max-width: calc(90% - 364px);
+    padding: 0 10px;
+    margin: 0;
+}
+
+.side::before {
+    left: -32px;
+    background: url(%%fringeLeft%%);
+}
+
+div[role="main"]::after {
+    right: -32px;
+    background: url(%%fringeRight%%);
+}
+
+.side::before,
+div.content::after {
+    z-index: 9001;
+    content: " ";
+    position: absolute;
+    display: block;
+    top: 0px;
+    width: 32px;
+    height: 100%;
+}
+
+div > .RES-keyNav-activeElement,
+div >.RES-keyNav-activeElement .md-container {
+    background: transparent !important;
+}
+
+div[role="main"] > div {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+div[role="main"] > div {
+    margin: 8px 0px;
+    padding: 6px 10px;
+    width: 100%;
+}
+
+a,
+a:visited {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #333 !important;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #333 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    font-variant: small-caps;
+    text-shadow: 0px 1px 0px #fff, 0px 2px 0px #ccc, 0px 3px 6px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    position: relative;
+}
+
+h2 {
+    font-size: 30px;
+    font-variant: small-caps;
+    text-shadow: 0px 1px 0px #fff, 0px 2px 0px #ccc, 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.side a {
+    font-weight: bold;
+    margin-top: 8px;
+    text-decoration: none !important;
+    border: none;
+}
+
+a:hover {
+    text-shadow: 0px 0px 3px #fff;
+    color: #000;
+}
+
+a:active {
+    opacity: 0.8;
+    background: transparent;
+}
+
+.side > .spacer {
+    background-image: url(%%leftShadow%%) !important;
+    background-repeat: repeat-y !important;
+    margin: 0 !important;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.side > .spacer > div {
+    padding-left: 4px;
+    margin-left: 4px;
+    border-left: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+.side h1,
+.side h2,
+.side h3,
+.side h4 {
+    border-bottom: none !important;
+}
+
+.side #search input[type=text] {
+    width: 280px;
+}
+
+.arrow[aria-label="downvote"] {
+    visibility: hidden;
+}
+
+.arrow.up,
+.arrow.upmod {
+    background: url(%%orteil%%) !important;
+}
+
+div.arrow {
+    position: relative;
+}
+
+.arrow.upmod::before {
+    background-color: rgba(255, 102, 0, 0.6) !important;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.res-commentBoxes .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: transparent !important;
+}
+
+div#header {
+    color: #fff !important;
+    font-size: 12px;
+    font-variant: small-caps;
+    padding: 3px 8px;
+}
+
+div#header a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #ccc !important;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+}
